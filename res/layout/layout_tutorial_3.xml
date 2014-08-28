@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/t3_fixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tutorial3_text" />
+
+    <RelativeLayout
+        android:id="@+id/center_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="300.0dip" >
+
+        <ImageView
+            android:id="@+id/t3_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40.0dip"
+            android:layout_marginTop="70.0dip"
+            android:src="@drawable/t3_could_left1" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/t3_icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120.0dip"
+            android:layout_marginTop="45.0dip"
+            android:src="@drawable/t3_could_left2" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/t3_icon4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="70.0dip"
+            android:src="@drawable/t3_could_right1" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/t3_icon5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50.0dip"
+            android:layout_marginRight="40.0dip"
+            android:src="@drawable/t3_could_right2" 
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/t3_icon6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/t3_icon7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.0dip"
+        android:src="@drawable/tutorial3_bottom_text" />
+
+    <ImageView
+        android:id="@+id/t3_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tutorial_next" />
+
+</LinearLayout>

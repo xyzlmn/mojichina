@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/rocket_long"
+        android:duration="70"/>
+    <item
+        android:drawable="@drawable/rocket_middle"
+        android:duration="70"/>
+    <item
+        android:drawable="@drawable/rocket_short"
+        android:duration="70"/>
+
+</animation-list>

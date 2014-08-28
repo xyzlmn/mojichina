@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/center_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/t2_fixed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tutorial2_fixed" />
+
+        <ImageView
+            android:id="@+id/t2_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t2_fixed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5.0dip"
+            android:src="@drawable/tutorial2_static" />
+
+        <ImageView
+            android:id="@+id/t2_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t2_fixed"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tutorial2_icon1"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/t2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/t2_static"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10.0dip"
+            android:src="@drawable/tutorial2_text" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/t2_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:src="@drawable/tutorial_next" />
+
+</LinearLayout>

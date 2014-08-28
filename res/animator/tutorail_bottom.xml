@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together" >
+
+    <!--
+    可以包含<objectAnimator>, <valueAnimator>,<set>项
+    属性：android:ordering=["together" | "sequentially"]，子集执行顺序
+    sequentially	Play animations in this set sequentially
+    together (default)	Play animations in this set at the same time.
+    -->
+
+    <set
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:ordering="together" >
+        <objectAnimator
+            android:duration="1000"
+            android:propertyName="translationX"
+            android:repeatCount="infinite"
+            android:repeatMode="reverse"
+            android:valueFrom="0"
+            android:valueTo="0"
+            android:valueType="floatType" >
+        </objectAnimator>
+        <objectAnimator
+            android:duration="1000"
+            android:propertyName="translationY"
+            android:repeatCount="infinite"
+            android:repeatMode="reverse"
+            android:valueFrom="-15"
+            android:valueTo="20"
+            android:valueType="floatType" >
+        </objectAnimator>
+    </set>
+
+    <objectAnimator
+        android:duration="1000"
+        android:propertyName="alpha"
+        android:repeatCount="infinite"
+        android:valueFrom="1.0"
+        android:valueTo="0.3"
+        android:valueType="floatType" >
+    </objectAnimator>
+    <!--
+   objectAnimator：
+    
+        android:propertyName
+            对view可以设置一下值:
+               translationX and translationY: 
+                   These properties control where the View is located 
+                   as a delta from its left and top coordinates which 
+                   are set by its layout container.
+               rotation, rotationX, and rotationY: 
+                   These properties control the rotation 
+                   in 2D (rotation property) and 3D around the pivot point.
+               scaleX and scaleY: 
+                   These properties control the 2D scaling of a View around 
+                   its pivot point.
+               pivotX and pivotY: 
+                   These properties control the location of the pivot point, 
+                   around which the rotation and scaling transforms occur. 
+                   By default, the pivot point is located at the center of 
+                   the object.
+               x and y: 
+                   These are simple utility properties to describe 
+                   the final location of the View in its container, 
+                   as a sum of the left and top values and translationX 
+                   and translationY values.
+               alpha: 
+                   Represents the alpha transparency on the View. 
+                   This value is 1 (opaque) by default, with a value of 0 
+                   representing full transparency (not visible).
+                   
+               还可以设置"backgroundColor"等值
+                   
+        android:valueTo
+            float, int, or color. Required. The value where the animated property ends. 
+            Colors are represented as six digit hexadecimal numbers (for example, #333333).
+        
+        android:valueFrom
+            float, int, or color. The value where the animated property starts. If not specified, 
+            the animation starts at the value obtained by the property's get method. 
+            Colors are represented as six digit hexadecimal numbers (for example, #333333).
+        
+        android:duration
+            int. The time in milliseconds of the animation. 300 milliseconds is the default.
+        
+        android:startOffset
+            int. The amount of milliseconds the animation delays after start() is called.  
+        
+        android:repeatCount：重复次数
+            说明：
+            infinite：循环执行，
+            具体正整数表示循环次数
+            
+        android:repeatMode：重复模式，
+            说明：
+                restart：重新从头开始执行
+                reverse：反方向执行
+                
+        android:valueType
+           Keyword. Do not specify this attribute if the value is a color. 
+           The animation framework automatically handles color values
+           
+           intType:	Specifies that the animated values are integers
+           floatType (default):	Specifies that the animated values are floats
+    -->
+
+</set>
