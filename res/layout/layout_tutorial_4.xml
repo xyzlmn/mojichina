@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/t4_image"
         android:visibility="visible" />
-
+    
     <ImageView
         android:id="@+id/t4_fixed"
         android:layout_width="wrap_content"

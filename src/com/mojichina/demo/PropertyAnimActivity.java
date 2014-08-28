@@ -320,6 +320,7 @@ public class PropertyAnimActivity extends FragmentActivity implements
 			transAnimation5.setInterpolator((new LinearInterpolator()));
 			
 			flag3=true;
+			
 			// —”≥Ÿ1√Î
 			new Handler() {				
 				@Override
